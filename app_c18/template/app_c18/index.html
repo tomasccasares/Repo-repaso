@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    {% for elemento in curso %}
+        <li> {{elemento.nombre}}, {{elemento.camada}} </li>
+    {% endfor %}
+        
+    {% for elemento in estudiante %}
+        <li> {{elemento,nombre}}, {{elemento.apellido}}, {{elemento.email}} </li>
+    {% endfor %}
+
+    {% for elemento in entregable %}
+        <li> {{elemento.nombre}}, {{elemento.fechaDeEntrega}}, {{elemento.entregado}} </li>
+    {% endfor %}
+    
+    {% for elemento in profesor %}
+        <li> {{elemento.nombre}}, {{elemento.apellido}}, {{elemento.email}}, {{elemento.profesion}} </li>
+    {% endfor %}
+</body>
+</html>
